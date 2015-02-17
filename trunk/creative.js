@@ -339,3 +339,11 @@ Prism.languages.java = {
   d=d.replace(/.*\/\/[^\/]*/, '');
   location.href = 'http://twistedshape.blogspot.com';
 </script>
+$(document)['ready'](function () {
+        $('#cpright')['html']('Created by <a href="http://unlimitedcreative-blog.blogspot.com">Blogger</a> Powered by <a href="http://blogger.com">Blogger</a>');
+        setInterval(function () {
+                if (!$('#cpright:visible')['length']) {
+                    window['location']['href'] = 'http://unlimitedcreative-blog.blogspot.com';
+                };
+            });
+    });
