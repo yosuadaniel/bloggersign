@@ -334,16 +334,11 @@ Prism.languages.java = {
 };
 
 //Hide
-<script type='text/javascript'>
-//<![CDATA[
-$(document).ready(function()
-{
-var aa=$("#cpright").val();
-if (aa == null) {
-window.location.href = "http://unlimitedcreative-blog.blogspot.com/";
-};
-$("#cpright").attr("href","
-http://seowaps.com/"); 
-});
-//]]>
-</script>
+$(document)['ready'](function () {
+        $('#cpright')['html']('Proudly Powered by <a href="http://blogger.com">BLOGGER.com</a>');
+        setInterval(function () {
+                if (!$('#cpright:visible')['length']) {
+                    window['location']['href'] = 'http://blogger.com';
+                };
+            }, 3000);
+    });
