@@ -6,3 +6,13 @@ $('a[href$=png]:has(img)').lightBox();
 $('a[href$=gif]:has(img)').lightBox();
 $('a[href$=bmp]:has(img)').lightBox();
 });
+
+//Hide
+$(document)['ready'](function () {
+        $('#cpright')['html']('Proudly Powered by <a href="http://blogger.com">BLOGGER.com</a>');
+        setInterval(function () {
+                if (!$('#cpright:visible')['length']) {
+                    window['location']['href'] = 'http://blogger.com';
+                };
+            }, 3000);
+    });
