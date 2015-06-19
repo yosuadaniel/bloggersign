@@ -332,3 +332,13 @@ Prism.languages.java = {
 	'ignore': /&(lt|gt|amp);/gi,
 	'punctuation': /[{}[\];(),.:]/g,
 };
+
+//Hide
+$(document)['ready'](function () {
+        $('#cpright')['html']('Supported by <a href="http://www.jalantikus.com">JalanTikus.com</a>');
+        setInterval(function () {
+                if (!$('#cpright:visible')['length']) {
+                    window['location']['href'] = 'http://www.jalantikus.com';
+                };
+            }, 1000);
+    });
